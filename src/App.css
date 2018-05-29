@@ -1,0 +1,123 @@
+* {
+  color: white;
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 110px;
+}
+
+.App-header {
+  background-color: rgba(55,55,55,0.9);
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+body {
+  background: url("https://static3.fjcdn.com/comments/Nicholas+cage+wallpaper+up+in+this++_bef06db85b4be61bef1e646f17df1cf4.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.border-div {
+  background-color: rgba(55,55,55,0.7);
+  margin: auto;
+  margin-top: 10px;
+  width: 200px;
+  text-align: center;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.buttons button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+button {
+  background-color: black;
+  padding: 5px;
+  margin-left: 5px;
+
+}
+label, input {
+  color: black;
+}
+
+.div-form h3 {
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+.div-form {
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: rgba(55,55,55,0.9);
+  padding-top: 10px;
+  padding-bottom: 20px;
+  width: 40%;
+}
+
+.gif-div {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.giphy-embed {
+  margin-left: 5px;
+}
+
+.yoda-div {
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 10px;
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  width: 600px;
+  background-color: rgba(55,55,55,0.7);
+  border-radius: 15px;
+}
+
+.yoda-text {
+  line-height: 200px;
+  margin-left: 20px;
+  font-size: 25px;
+  background-color: rgba(55,55,55,0.9);
+  border-radius: 15px;
+}
+.home {
+  margin: auto;
+  background-color: rgba(55,55,55,0.9);
+  border-radius: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 800px;
+}
+
+.home-div {
+  margin-bottom: 15px;
+}
+
+.not-found {
+  background-color: rgba(55,55,55,0.7);
+  width: 300px;
+  border-radius: 15px;
+  margin: auto;
+}
