@@ -25,7 +25,6 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <iframe title="cageHead" className="App-logo" src="https://giphy.com/embed/2v170e71aanfi" frameBorder="0" allowFullScreen />
-          {/*<div className="border-div"><h1 className="App-title">Cage React</h1></div>*/}
           {appLinks}
         </header>
 

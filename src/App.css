@@ -6,7 +6,7 @@
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
+  animation: App-logo-spin infinite 15s linear;
   height: 110px;
 }
 
@@ -76,7 +76,10 @@ label, input {
 
 .gif-div {
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 10px;
+  margin: auto;
+  width: 60%;
 }
 
 .giphy-embed {
@@ -120,4 +123,11 @@ label, input {
   width: 300px;
   border-radius: 15px;
   margin: auto;
+}
+
+.temp {
+  background-color: rgba(55,55,55,0.9);
+  width: 600px;
+  margin: auto;
+  margin-bottom: 10px;
 }

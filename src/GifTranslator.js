@@ -10,6 +10,7 @@ class GifTranslator extends Component {
   state = {
     gifs: [],
     phrase: "",
+    temp: "",
     yoda: ""
   }
 
@@ -59,9 +60,10 @@ class GifTranslator extends Component {
   displayGifs = () => {
     return this.state.gifs.map((gif) => {
       return (
-      <div key={gif.id}>
-        <iframe title={gif.id} src={gif.embed_url} width="200" height="200" frameBorder="0" className="giphy-embed" allowFullScreen></iframe>
-      </div>)
+        <div key={gif.id}>
+          <iframe title={gif.id} src={gif.embed_url} width="200" height="200" frameBorder="0" className="giphy-embed" allowFullScreen></iframe>
+        </div>
+      )
     })
   }
 
@@ -71,6 +73,7 @@ class GifTranslator extends Component {
 
   submit = (e) => {
     e.preventDefault();
+    this.setState({temp: this.state.phrase})
     this.fetchGifs();
     this.fetchYoda();
     this.setState({phrase: ""})
@@ -84,6 +87,10 @@ class GifTranslator extends Component {
       </div>
     )
   }
+
+  displayTemp = () => {
+    return <h3 className="temp">{this.state.temp}</h3>
+  }
   render() {
     return(
       <div>
@@ -94,6 +101,7 @@ class GifTranslator extends Component {
             <input type="submit" />
           </form>
         </div>
+        {this.state.temp ? this.displayTemp() : null}
           <div className="gif-div">
             {this.state.gifs ? this.displayGifs() : null}
           </div>
