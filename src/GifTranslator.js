@@ -60,8 +60,8 @@ class GifTranslator extends Component {
   displayGifs = () => {
     return this.state.gifs.map((gif) => {
       return (
-        <div key={gif.id}>
-          <iframe title={gif.id} src={gif.embed_url} width="200" height="200" frameBorder="0" className="giphy-embed" allowFullScreen></iframe>
+        <div key={gif.id} style={{width: '220px', height: '150px', backgroundColor: 'rgba(55,55,55,0.8)', margin: '5px'}}>
+          <iframe title={gif.id} src={gif.embed_url} width="200px" height="150px" frameBorder="0" className="giphy-embed" allowFullScreen></iframe>
         </div>
       )
     })
