@@ -6,7 +6,6 @@ import GifTranslator from './GifTranslator'
 import Home from './Home'
 import NotFound from './NotFound'
 
-
 class App extends Component {
   render() {
 
